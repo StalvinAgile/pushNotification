@@ -13,9 +13,6 @@ push.setVapidDetails(
     vapidKeys.privateKey
 );
 
-let pushSubscription = { 
-    "endpoint": "https://fcm.googleapis.com/fcm/send/e4t0lnfaPEw:APA91bESio2tbaQikjtnL-lyszu58HDEPg4mtqyLaRETx-HDzfcpQnJPA2LEs3rIFMt-xSW_PRlgKiFsne6CKJHmWj8oaLOQJgAlIDNPtM5Jf4J9JQAvaVUAvlCsLqLNkXp67Vk6Nlzp", 
-    "expirationTime": null, 
-    "keys": { "p256dh": "BOBFhrnitNNDTh8NzvFQrBK1ApxdJxqOOLBwzD01lRIyiGQLHl42askBSZ5j9i9szr1Hea15A5AgKO0BDRIK5L8", "auth": "HdYQbxphtau6MWMnfZy1kg" } }
+let pushSubscription = {"endpoint":"https://fcm.googleapis.com/fcm/send/e4t0lnfaPEw:APA91bESio2tbaQikjtnL-lyszu58HDEPg4mtqyLaRETx-HDzfcpQnJPA2LEs3rIFMt-xSW_PRlgKiFsne6CKJHmWj8oaLOQJgAlIDNPtM5Jf4J9JQAvaVUAvlCsLqLNkXp67Vk6Nlzp","expirationTime":null,"keys":{"p256dh":"BOBFhrnitNNDTh8NzvFQrBK1ApxdJxqOOLBwzD01lRIyiGQLHl42askBSZ5j9i9szr1Hea15A5AgKO0BDRIK5L8","auth":"HdYQbxphtau6MWMnfZy1kg"}}
 
 push.sendNotification(pushSubscription, 'Your Push Payload Text');
